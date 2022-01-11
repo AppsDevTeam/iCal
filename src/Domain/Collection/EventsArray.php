@@ -29,7 +29,7 @@ final class EventsArray extends Events
         array_walk($events, [$this, 'addEvent']);
     }
 
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return new ArrayIterator($this->events);
     }

@@ -20,7 +20,7 @@ abstract class Events implements IteratorAggregate
     /**
      * @return Iterator<Event>
      */
-    abstract public function getIterator();
+    abstract public function getIterator(): \Traversable;
 
     abstract public function addEvent(Event $event): void;
 }

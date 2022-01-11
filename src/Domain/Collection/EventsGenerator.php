@@ -30,7 +30,7 @@ final class EventsGenerator extends Events
         $this->generator = $generator;
     }
 
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return $this->generator;
     }

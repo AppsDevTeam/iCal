@@ -56,7 +56,7 @@ class Component implements IteratorAggregate
         );
     }
 
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return $this->getContentLines();
     }
